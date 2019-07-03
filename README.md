@@ -3,16 +3,19 @@ En este repositorio podrás encontrar algunas pequeñas apps que te sirvan de ay
 
 Está dividido por carpetas, de forma que podáis localizar lo que necesiteis desde este README.
 
-# 000_Typescript
+#Angular
+
+## 000_Typescript
 
 Añado algunas pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
 
-## Getting Started
+## 001_Spa (Single Page Application)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Este es el caso de una aplicación mínima (tanto de escritorio como movil)
 
 ### Prerequisites
 
+Hago uso de boostrap (comprobar los scripts en index.html o en su defecto hacer uso de npm)
 
 ## License
 
