@@ -12,6 +12,7 @@ import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { APP_ROUTING } from './app.routes';
 
 // Services
+import { HeroesService } from './services/heroes.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { APP_ROUTING } from './app.routes';
     NavBarComponent
   ],
   imports: [ APP_ROUTING, BrowserModule ],
-  providers: [],
-  bootstrap: [AppComponent],
+  providers: [ HeroesService ],
+  bootstrap: [ AppComponent ],
 })
 export class AppModule { }
