@@ -3,13 +3,17 @@
 
 <div class="card-columns">
     
-    <div class="card" *ngFor="let heroe of aHeroes">
+    <div class="card animated fadeIn fast" *ngFor="let heroe of aHeroes; let i =index">
         <img [src]="heroe.img" class="card-img-top img-fluid" [alt]="heroe.nombre">
         <div class="card-body">
             <h5 class="card-title">{{ heroe.nombre }}</h5>
             <p class="card-text text-justify">{{ heroe.bio }}</p>
             <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
-            <button type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+            <button (click)= "verHeroe(i)"
+                    type="button" class="btn btn-outline-primary btn-block">
+                    Ver más...
+            </button>
+            <!-- <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block">Ver más ...</a> -->
         </div>
     </div>
 </div>
