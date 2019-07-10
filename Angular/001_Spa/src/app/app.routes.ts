@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 const APP_ROUTES: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'heroe/:id', component: HeroeComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'home', component: HomeComponent },
+    { path: 'buscar/:termino', component: BuscadorComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
