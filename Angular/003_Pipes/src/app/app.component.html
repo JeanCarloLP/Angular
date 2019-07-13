@@ -1,0 +1,263 @@
+<div class="container main-container">
+  <h1>{{title}}</h1>
+  <hr>
+
+  <h5 class="thead-light">Uppercase, Lowercase</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1.-</th>
+          <td>{{ nombre }}</td>
+          <td>{{ variableUppercase }}</td>
+          <td>{{ nombre | uppercase }}</td>
+        </tr>
+        <tr>
+          <th>2.-</th>
+          <td>{{ nombre }}</td>
+          <td>{{ variableLowercase }}</td>
+          <td>{{ nombre | lowercase }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br><br>
+  <h5 class="thead-light">Slice</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>3.-</th>
+          <td>{{ nombre }}</td>
+          <td>{{ varSlice3 }}</td>
+          <td>{{ nombre | slice:3 }}</td>
+        </tr>
+        <tr>
+          <th>4.-</th>
+          <td>{{ nombre }}</td>
+          <td>{{ varSlice03 }}</td>
+          <td>{{ nombre | slice:0:3 }}</td>
+        </tr>
+        <tr>
+          <th>5.-</th>
+          <td>[ {{ array }} ]</td>
+          <td>{{ varArray3 }}</td>
+          <td>[ {{ array | slice:3 }} ]</td>
+        </tr>
+        <tr>
+          <th>6.-</th>
+          <td>[ {{ array }} ]</td>
+          <td>{{ varArray37 }}</td>
+          <td>[ {{ array | slice:3:7 }} ]</td>
+        </tr>
+        <tr class="alert alert-primary alert-dismissible fade show">
+          <th>7.-</th>
+          <td>[ {{ array }} ]</td>
+          <td>{{ varNgFor }}</td>
+          <td>
+              <ul>
+                <li *ngFor = "let item of array | slice:5:20">{{ item }}</li>
+              </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alert alert-primary alert-dismissible fade show">
+          <p>Caso especial Si usamos un 
+            <strong>ngFor</strong> en el último array también podremos hacer uso del slice.
+                Mucho ojo que no da un error si nos salimos del indice del array, es de dimensión 
+                10 pero marcamos hasta 20.
+          </p>
+      </div>
+  </div>
+  <br><br>
+  <h5 class="thead-light">Decimal (no debería de llamarse number??? ¯\_(ツ)_/¯ )</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>8.-</th>
+          <td>{{ PI }}</td>
+          <td>{{ varPi }}</td>
+          <td>{{ PI | number }}</td>
+        </tr>
+        <tr>
+          <th>9.-</th>
+          <td>{{ PI }}</td>
+          <td>{{ varNumber }}</td>
+          <td>{{ PI | number: '3.0-0' }}</td>
+        </tr>
+        <tr class="alert alert-primary alert-dismissible fade show">
+          <th>10.-</th>
+          <td>{{ PI }}</td>
+          <td>{{ varNumber2 }}</td>
+          <td>{{ PI | number:'1.0-2':'es' }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alert alert-primary alert-dismissible fade show">
+          <p>Para poder usar la "," en vez del punto hay que importar en el modulo lo siguiente:</p>
+          <p>{{varImportar1}}</p>
+          <p>{{varImportar2}}</p>
+          <p>{{varImportar3}}</p>
+      </div>
+  </div>
+  <br><br>
+  <h5 class="thead-light">Porcentaje</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>11.-</th>
+          <td>{{ porcentaje }}</td>
+          <td>{{ varPorcentaje }}</td>
+          <td>{{ porcentaje | percent }}</td>
+        </tr>
+        <tr>
+          <th>12.-</th>
+          <td>{{ porcentaje2 }}</td>
+          <td>{{ varPorcentaje2 }}</td>
+          <td>{{ porcentaje2 | percent:'2.2-4' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br><br>
+  <h5 class="thead-light">Currency (para monedas usando el ISO 4217 de todas las monedas del mundo).</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>13.-</th>
+          <td>{{ salario }}</td>
+          <td>{{ varSalario }}</td>
+          <td>{{ salario | currency }}</td>
+        </tr>
+        <tr class="alert alert-primary alert-dismissible fade show">
+          <th>14.-</th>
+          <td>{{ salario }}</td>
+          <td>{{ varSalario2 }}</td>
+          <td>{{ salario | number:'.0-2':'es' }} €</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br><br>
+  <h5 class="thead-light">Json</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>15.-</th>
+          <td><kbd>{{ objeto }} -></kbd> {{ objeto | json }}</td>
+          <td>{{ varObjeto1 }}<kbd>{{ varObjeto2 }}</kbd></td>
+          <td><pre>{{ objeto | json }}</pre></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h5 class="thead-light">Async</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>16.-</th>
+          <td>{{ valorPromesa }} </td>
+          <td>{{ varAsync }}</td>
+          <td><pre>{{ valorPromesa | async }}</pre></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  <br><br>
+  <h5 class="thead-light">Date</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>17.-</th>
+          <td>{{ fecha }} </td>
+          <td>{{ varFecha }}</td>
+          <td><pre>{{ fecha | date }}</pre></td>
+        </tr>
+        <tr>
+          <th>18.-</th>
+          <td>{{ fecha }} </td>
+          <td>{{ varFecha1 }}</td>
+          <td><pre>{{ fecha | date:'dd/MM/yyyy' }}</pre></td>
+        </tr>
+        <tr>
+          <th>19.-</th>
+          <td>{{ fecha }} </td>
+          <td>{{ varFecha2 }}</td>
+          <td><pre>{{ fecha | date:'dd - MMMM - yyyy' }}</pre></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
