@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   array = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
+  contrasena = `!236sdfbJasdfbn_#sfb`;
+  activar = true;
+  varContrasena = `{{ variable | customPipePassword }}`;
   fecha = new Date();
   nombre = 'Jean Carlo';
+  nombre2 = 'jeancarlo león PregunTeguI';
   PI = Math.PI;
   porcentaje = 0.234;
   porcentaje2 = 0.23948754;
@@ -55,4 +59,17 @@ export class AppComponent {
       setTimeout(() => resolve('Llegaron los datos después de 4 segundos'), 4000);
     }
   );
+
+  varPipePersonalizado = `{{ variable | pipPersonalizado}}`;
+  // tslint:disable-next-line:max-line-length
+  varPipePersonalizado2 = `{{ variable | pipPersonalizado:false}} pasamos el argumento false para que no se modifiquen todas las palabras, sólo la primera`;
+
+  video = 'Il6p2-40-F0';
+  variableYoutube = `[src]="variable | domseguro:'https://www.youtube.com/embed/'" `;
+  variableYoutube1 = `Necesitamos insertar una url segura. En una url, Angular detecta como una vulneravilidad
+    el insertar una url en una variable`;
+  variableYoutube2 = `Revisar las importaciones necesarias en el pipe`;
+  variableYoutube3 = `import { DomSanitizer } from '@angular/platform-browser';`;
+  variableYoutube4 = `[...]`;
+  variableYoutube5 = `return this.domSanitizer.bypassSecurityTrustResourceUrl( url + value );`;
 }
