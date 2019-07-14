@@ -260,4 +260,96 @@
       </tbody>
     </table>
   </div>
+  <br><br>
+  <h5 class="thead-light">Pipe Personalizado Capitalizar Palabras</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>20.-</th>
+          <td>{{ nombre2 }} </td>
+          <td>{{ varPipePersonalizado }}</td>
+          <td>{{ nombre2 | capitalizado}}</td>
+        </tr>
+        <tr>
+          <th>21.-</th>
+          <td>{{ nombre2 }} </td>
+          <td>{{ varPipePersonalizado2 }}</td>
+          <td>{{ nombre2 | capitalizado:false }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <br><br>
+  <h5 class="thead-light">Pipe Seguridad en URLs (Videos)</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="alert alert-primary alert-dismissible fade show">
+          <th>22.-</th>
+          <td>
+            <h4>Youtube <small>video sin url segur0</small></h4>
+            <iframe width="150" height="100" src="https://www.youtube.com/embed/{{video}}"></iframe>
+          </td>
+          <td>{{ variableYoutube }}</td>
+          <td>
+            <h4>Youtube <small>video con url segura</small></h4>
+            <iframe width="150" height="100" [src]="video | domseguro:'https://www.youtube.com/embed/'"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreem></iframe>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="alert alert-primary alert-dismissible fade show">
+      <p>{{ variableYoutube1 }}</p>
+      <p>{{ variableYoutube2 }}</p>
+      <p>{{ variableYoutube3 }}</p>
+      <p>{{ variableYoutube4 }}</p>
+      <p>{{ variableYoutube5 }}</p>
+  </div>
+  </div>
+  <br><br>
+  <h5 class="thead-light">Contraseña</h5>
+  <div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Variable</th>
+          <th style="width: 30%">Pipe</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>23.-</th>
+          <td>{{ contrasena }} </td>
+          <td>{{ varContrasena }}</td>
+          <td>{{ contrasena | contrasena }}</td>
+        </tr>
+        <tr>
+          <th>24.-</th>
+          <td>{{ contrasena }} </td>
+          <td> {{ varContrasena }} Mostrar contraseña: {{ !activar }} <button class="btn btn-outline-primary" (click)="activar = !activar" type="button">Mostrar/Ocultar</button></td>
+          <td>{{ contrasena | contrasena:activar }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
