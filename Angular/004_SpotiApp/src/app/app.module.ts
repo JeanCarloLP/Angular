@@ -19,17 +19,19 @@ import { ROUTES } from './app.routes';
 import { NoImagePipe } from './pipes/no-image.pipe';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    SearchComponent,
     ArtistComponent,
+    DomseguroPipe,
+    HomeComponent,
+    LoadingComponent,
     NavbarComponent,
     NoImagePipe,
     TarjetasComponent,
-    LoadingComponent
+    SearchComponent
   ],
   imports: [
     BrowserModule,
