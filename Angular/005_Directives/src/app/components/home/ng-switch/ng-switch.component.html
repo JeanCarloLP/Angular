@@ -1,0 +1,62 @@
+<div class="table-responsive-md">
+    <table class="table">      
+        <thead class="thead-dark">
+        <tr>
+            <th>#</th>
+            <th style="width: 30%">Estado inicial</th>
+            <th style="width: 35%">Atributo</th>
+            <th style="width: 30%">Resultado</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>9.-</th>
+            <td>
+                <div class="alert alert-primary" role="alert">
+                This is a primary alert—check it out!
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                This is a secondary alert—check it out!
+                </div>
+                <div class="alert alert-success" role="alert">
+                This is a success alert—check it out!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                This is a danger alert—check it out!
+                </div>
+                <div class="alert alert-warning" role="alert">
+                This is a warning alert—check it out!
+                </div>
+                <div class="alert alert-info" role="alert">
+                This is a info alert—check it out!
+                </div>
+                <div class="alert alert-light" role="alert">
+                This is a light alert—check it out!
+                </div>
+                <div class="alert alert-dark" role="alert">
+                This is a dark alert—check it out!
+                </div>
+            </td>
+            <td><pre>{{ variable }}</pre></td>
+            <td>
+                <div [ngSwitch]="alerta">
+                    <div *ngSwitchCase="'danger'" class="alert alert-danger" role="alert">
+                    This is a danger alert—check it out!
+                    </div>
+                    <div *ngSwitchCase="'info'" class="alert alert-info" role="alert">
+                    This is a info alert—check it out!
+                    </div>
+                    <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+                    This is a success alert—check it out!
+                    </div>
+                    <div *ngSwitchDefault class="alert alert-warning" role="alert">
+                    This is a warning alert—check it out!
+                    </div>
+
+                    <button class="btn btn-primary" type="button" name="button" (click)="alerta = 'success'">Cambiar Alerta</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

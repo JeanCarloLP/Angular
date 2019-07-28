@@ -1,0 +1,126 @@
+<div class="table-responsive-md">
+        <table class="table">      
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th>
+              <th style="width: 30%">Estado inicial</th>
+              <th style="width: 35%">Atributo</th>
+              <th style="width: 30%">Resultado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th>5.-</th>
+                <td>
+                    <div class="alert alert-primary" role="alert">
+                    This is a primary alert—check it out!
+                    </div>
+                    <!-- <div class="alert alert-secondary" role="alert">
+                    This is a secondary alert—check it out!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                    This is a success alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                    This is a danger alert—check it out!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                    This is a warning alert—check it out!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                    This is a info alert—check it out!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                    This is a light alert—check it out!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                    This is a dark alert—check it out!
+                    </div> -->
+                </td>
+                <td>{{ var1 }}</td>
+                <td>
+                    <div [ngClass]="alerta" class="alert" role="alert">
+                        This is a {{alerta}} check it out!
+                    </div>
+                    <button class="btn btn-info m-1" (click)="alerta = 'alert-info'">Info</button>
+                    <button class="btn btn-success m-1" (click)="alerta = 'alert-success'">Success</button>
+                    <button class="btn btn-danger m-1" (click)="alerta = 'alert-danger'">Danger</button>
+                </td>
+            </tr>
+
+            <tr>
+                <th>6.-</th>
+                <td>Usando objetos en [ngClass]</td>
+                <td>{{ var2 }} <br/> <br/>{{ var3 }}</td>
+                <td>
+                        <h3 [ngClass] = " { 'text-danger': propiedades.danger, 'text-info': !propiedades.danger }">Hola Mundo</h3>
+                        <br/>
+                        <button 
+                            (click)="cambiarPropiedades()" 
+                            type="button" name="button"
+                            class="btn" 
+                            [ngClass]=" { 'btn-danger': propiedades.danger, 'btn-info': !propiedades.danger }">
+                            Cambiar
+                        </button>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+<h5>Proceso Asíncrono</h5>
+<div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Estado inicial</th>
+          <th style="width: 35%">Atributo</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <th>7.-</th>
+            <td>
+              <button class="btn btn-primary">Guardar Estandar</button>
+            </td>
+            <td>Guardando de forma asíncrona: <br/>aplicamos [ngClass] al icono directamente <br/><br/> {{ var4 }} <br/><br/> {{ var5 }}
+            </td>
+            <td>
+              <button (click)="ejecutar()" class="btn btn-primary" type="button" name="button" [disabled]="loading">
+                <i class="fa" [ngClass]=" { 'fa-save':!loading, 'fa-refresh fa-spin':loading } "></i>
+                <span *ngIf="!loading"> Guardar Cambios</span>
+                <span *ngIf="loading"> Guardando</span>
+              </button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<h5>Directivas Personalizadas</h5>
+<div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Estado inicial</th>
+          <th style="width: 35%">Atributo</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <th>8.-</th>
+            <td>
+              <p>Hola Mundo</p>
+            </td>
+            <td>Directiva Creada e importada: <br/><br/> {{ var6 }}</td>
+            <td>
+              <p [appResaltado]="'orange'" >Hola Mundo (pasa el reatón por encima)</p>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

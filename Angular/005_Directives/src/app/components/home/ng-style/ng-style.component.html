@@ -1,0 +1,64 @@
+<div class="table-responsive-md">
+    <table class="table">      
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th style="width: 30%">Estado inicial</th>
+          <th style="width: 35%">Atributo</th>
+          <th style="width: 30%">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1.-</th>
+            <td>
+                <p style="font-size: 20px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem sapiente rem eum, quisquam voluptas aut ut ratione similique corporis sed et consectetur architecto quos fugit saepe rerum nihil cum?
+                </p>
+            </td>
+          <td>{{ var1 }}<br/><br/>{{ var2}}</td>
+          <td>
+            <p [ngStyle] = " { 'font-size': tamano + 'em'} ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem sapiente rem eum, quisquam voluptas aut ut ratione similique corporis sed et consectetur architecto quos fugit saepe rerum nihil cum?
+            </p>
+          </td>
+        </tr>
+        <tr>
+            <th>2.-</th>
+                <td>
+                    <p style="font-size: 20px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem sapiente rem eum, quisquam voluptas aut ut ratione similique corporis sed et consectetur architecto quos fugit saepe rerum nihil cum?
+                    </p>
+            </td>
+            <td>{{ var3 }} <br/><br/>{{ var4 }} <br/><br/>{{ var2}}</td>
+            <td>
+                <p [style.fontSize]="'1em'">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem sapiente rem eum, quisquam voluptas aut ut ratione similique corporis sed et consectetur architecto quos fugit saepe rerum nihil cum?
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th>3.-</th>
+                <td>
+                    <p style="font-size: 1em;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem sapiente rem eum, quisquam voluptas aut ut ratione similique corporis sed et consectetur architecto quos fugit saepe rerum nihil cum?
+                    </p>
+            </td>
+            <td colspan=2>
+                <p [style.fontSize.em]="tamano2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem sapiente rem eum, quisquam voluptas aut ut ratione similique corporis sed et consectetur architecto quos fugit saepe rerum nihil cum?
+                </p>
+                <div class="row">
+                    <button class="btn btn-primary m-1" (click)="tamano2 = tamano2+0.25">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                    <button class="btn btn-primary m-1" (click)="tamano2 = tamano2-0.25">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <p>Tamaño = {{ tamano2 }} em</p>
+                </div>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
