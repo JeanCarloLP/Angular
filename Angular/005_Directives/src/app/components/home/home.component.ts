@@ -1,5 +1,5 @@
 import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit,
-  AfterViewChecked, OnDestroy } from '@angular/core';
+  AfterViewChecked, OnDestroy, Input, SimpleChanges } from '@angular/core';
 
 // tslint:disable-next-line:no-conflicting-lifecycle
 @Component({
@@ -10,16 +10,20 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
 export class HomeComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit,
 AfterViewChecked, OnDestroy {
 
+  @Input() message: string;
+
   constructor() {
     console.log('contructor');
   }
 
   ngOnInit() {
-    console.log('ngOnInit()');
+    console.log(this.message);
   }
-  ngOnChanges() {
-    console.log('ngOnChanges()');
+
+  ngOnChanges(changes: SimpleChanges) {
+    console.log(changes);
   }
+
   ngDoCheck() {
     console.log('ngDoCheck()');
   }
