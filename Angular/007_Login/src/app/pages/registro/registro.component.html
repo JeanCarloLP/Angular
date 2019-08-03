@@ -1,51 +1,64 @@
-<div class="limiter">
+<div class="limiter animated fadeInRight">
         <div class="container-login100">
             <div class="wrap-login100 p-t-50 p-b-90">
-                <form class="login100-form validate-form flex-sb flex-w">
+
+                <form #form="ngForm"
+                    (ngSubmit)="onSubmit(form)"
+                    class="login100-form validate-form flex-sb flex-w">
     
                     <span class="login100-form-title p-b-51">
                         Crear nueva cuenta
                     </span>
     
-                    <!-- <span class="text-danger">El correo es obligatorio</span> -->
+                    <span *ngIf="form.submitted && form.controls['email'].errors"
+                        class="text-danger animated fadeIn">El correo es obligatorio</span>
                     <div class="wrap-input100 m-b-16">
-                        <input class="input100" 
-                               type="text" 
-                               name="email" 
-                               placeholder="Email">
-    
+                        <input [(ngModel)]="usuario.email" 
+                            class="input100" 
+                            name="email"
+                            placeholder="Email"
+                            required
+                            type="email"
+                            email> <!--email es una directiva propia de angular para indicar que se trata de un email-->
                         <span class="focus-input100"></span>
                     </div>
 
-                    <!-- <span class="text-danger">El nombre es obligatorio</span> -->
+                    <span *ngIf="form.submitted && form.controls['nombre'].errors" 
+                        class="text-danger animated fadeIn">El nombre es obligatorio</span>
                     <div class="wrap-input100 m-b-16">
-                        <input class="input100" 
-                               type="text" 
-                               name="nombre" 
-                               placeholder="Nombre y apellidos">
-    
+                        <input [(ngModel)]="usuario.nombre"
+                            class="input100" 
+                            name="nombre" 
+                            placeholder="Nombre y apellidos"
+                            required
+                            type="text">
                         <span class="focus-input100"></span>
                     </div>
                     
-                    <!-- <span class="text-danger">La contraseña debe de ser más de 6 letras</span> -->
+                    <span *ngIf="form.submitted && form.controls['password'].errors"
+                        class="text-danger animated fadeIn">La contraseña debe de ser más de 6 letras</span>
                     <div class="wrap-input100 m-b-16" data-validate = "Password is required">
-                        <input class="input100"
-                               type="password" 
-                               name="pass" 
-                               placeholder="Password">
+                        <input
+                            class="input100"
+                            minlength="6"
+                            name="password"
+                            [(ngModel)]="usuario.password"
+                            placeholder="Password"
+                            required
+                            type="password" > 
                         <span class="focus-input100"></span>
                     </div>
                     
                     <div class="flex-sb-m w-full p-t-3 p-b-24">
                         <div class="contact100-form-checkbox">
-                            <input class="mt-2 mr-2" id="ckb1" type="checkbox" name="remember-me">
+                            <input [(ngModel)]="recordarme" class="mt-2 mr-2" id="ckb1" type="checkbox" name="remember-me">
                         <label class="txt1 mt-2 mr-2" for="ckb1">
                                 Recordar mi usuario
                             </label>
                         </div>
     
                         <div>
-                            <a routerLink="/registro" class="txt1">
+                            <a routerLink="/login" class="txt1">
                                 ¿Ya tienes cuenta? / Ingresar
                             </a>
                         </div>
