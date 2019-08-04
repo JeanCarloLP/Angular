@@ -21,7 +21,6 @@ export class AuthService {
     this.getToken();
    }
 
-  // Servicios que vamos a llamar
   logout() {
     localStorage.removeItem('token');
   }
@@ -66,6 +65,10 @@ export class AuthService {
   private saveToken( idToken: string ) {
     this.userToken = idToken;
     localStorage.setItem('token', idToken);
+
+    const HOY = new Date();
+    HOY.setSeconds( 3600 ); // tiempo de expiracion dado por FIREBASE
+    localStorage.setItem('expira', HOY.getTime().toString() );
   }
 
   private getToken() {
@@ -79,7 +82,17 @@ export class AuthService {
   }
 
   public loginCorrect(): boolean {
-    // los tokens tienen un ciclo de vida
-    return this.userToken.length > 2;
+
+    if ( this.userToken.length < 2 )
+      return false;
+
+    const EXPIRA = Number(localStorage.getItem('expira'));
+    const EXPIRADATE = new Date();
+    EXPIRADATE.setTime(EXPIRA);
+
+    if (EXPIRADATE > new Date() )
+      return true;
+    else
+      return false;
   }
 }
