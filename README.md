@@ -1,4 +1,9 @@
-# TheChan
+# Angular Basic Apps
+
+In this repository you can find some small apps to help if you have recently started in the world of Angular and Typescript.
+
+It is divided by folders and you can locate what you need from this README.
+
 En este repositorio podrás encontrar algunas pequeñas apps que te sirvan de ayuda, si has empezado hace poco en el mundo de Angular y Typescript.
 
 Está dividido por carpetas, de forma que podáis localizar lo que necesiteis desde este README.
@@ -9,13 +14,49 @@ Está dividido por carpetas, de forma que podáis localizar lo que necesiteis de
 
 Añado algunas pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
 
+I add some small notions of Typescript, trying to make use of good practices and examples to try to have a cleaner code.
+
 ## 001_Spa (Single Page Application)
 
-Este es el caso de una aplicación mínima (tanto de escritorio como movil)
+This is the case of a minimal application (for desktop and mobile devices).
+
+Este es el caso de una aplicación mínima (tanto de escritorio como movil).
+
+## 002_Spa (Single Page Application)
+
+Similar to the previous app but in this case, we implement the use of @Input and @Output.
+
+Similar a la app anterior pero en este caso se implementa el uso de @Input y @Output.
+
+## 003_Pipes
+
+Shortcuts and reminders for the use of pipes.
+
+Atajos y recordatorios del uso de pipes.
+
+## 004_SpotiApp
+
+Application that uses the tool for developers of Spotify and Postman to explain the use of tokens, routes, HTTP requests and subscriptions among others.
+
+Aplicación que usa la herramienta para desarrolladores de Spotify y Postman para explicar el uso de tokens, rutas, peticiones HTTP y suscripciones entre otras.
+
+## 005_Directives
+
+Reminder how to use of directives.
+
+Recordatorio para el uso de directivas.
+
+## 007_Login
+
+Login Application using 3rd party libraries to improve messages through modal windows.
+
+Aplicación para realizar un login con el uso de librerias para mejorar los mensajes mediante ventanas modales.
 
 ### Prerequisites
 
-Hago uso de boostrap (comprobar los scripts en index.html o en su defecto hacer uso de npm)
+Remember to download the project and run "npm install" and "ng serve" or "ng start" depending on your configuration.
+
+Recuerda descargar el proyecto y ejecutar npm install y ng serve o ng start dependiendo de tu configuración.
 
 ## License
 
