@@ -12,9 +12,9 @@ Está dividido por carpetas, de forma que podáis localizar lo que necesiteis de
 
 ## 000_Typescript
 
-Añado algunas pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
-
 I add some small notions of Typescript, trying to make use of good practices and examples to try to have a cleaner code.
+
+Añado algunas pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
 
 ## 001_Spa (Single Page Application)
 
