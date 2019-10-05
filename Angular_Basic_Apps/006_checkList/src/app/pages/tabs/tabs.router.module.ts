@@ -14,6 +14,11 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+          },
+          {
+            path: 'add-list/:listId',
+            loadChildren: () =>
+              import('../add-list/add-list.module').then(m => m.AddListPageModule)
           }
         ]
       },
@@ -24,16 +29,11 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-          }
-        ]
-      },
-      {
-        path: 'tab3',
-        children: [
+          },
           {
-            path: '',
+            path: 'add-list/:listId',
             loadChildren: () =>
-              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+              import('../add-list/add-list.module').then(m => m.AddListPageModule)
           }
         ]
       },
