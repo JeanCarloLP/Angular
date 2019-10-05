@@ -1,0 +1,28 @@
+<ion-list #checkList>
+  <ion-item-sliding *ngFor='let checkList of checklistService.checklists | filterLists:finished'>
+
+    <ion-item detail (click)="selectedList( checkList )">
+      <ion-label>
+        {{ checkList.title }}
+      </ion-label>
+      <ion-note slot="end">{{ checkList.items.length}} items</ion-note>
+    </ion-item>
+    
+    <ion-item-options side="end">
+      <ion-item-option (click)="deleteList( checkList )" color = "danger">
+        <ion-icon name="close" slot="icon-only">
+            Delete    
+        </ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+
+    <ion-item-options side="start">
+        <ion-item-option (click)="editListName( checkList )">
+          <ion-icon name="create" slot="icon-only">
+              Edit    
+          </ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    
+  </ion-item-sliding>
+</ion-list>
