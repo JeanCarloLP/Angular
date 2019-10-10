@@ -12,12 +12,10 @@ export class HeroesComponent implements OnInit {
 
   constructor( private heroesService: HeroesService,
                private router: Router ) {
-    // console.log('constructor');
   }
 
   ngOnInit() {
     this.aHeroes = this.heroesService.getHeroes();
-    // console.log(this.aHeroes);
   }
 
   verHeroe( idx: number) {

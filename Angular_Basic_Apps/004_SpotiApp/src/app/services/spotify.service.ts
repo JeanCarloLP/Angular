@@ -40,20 +40,4 @@ export class SpotifyService {
     return this.getQuery(`artists/${ id }/top-tracks?country=us`).pipe( map( data => data['tracks']));
   }
 
-  // getQuery(query: string) {
-  //   const URL = `https://api.spotify.com/v1/${ query }`;
-  //   const HEADERS = new HttpHeaders({
-  //     Authorization: 'Bearer BQBfbYWMSQP8e46nHOHpboNn6D1M4pOqtkjP9OYO0Q87MOODIB7ikrRgRLz7lcZfCS31E77prb9dC7JIFtk'
-  //   });
-  //   return this.http.get( URL, { headers: HEADERS });
-  // }
-
-  // getNewReleases() {
-  //   return this.getQuery('browse/new-releases?limit=21').pipe( map( (data: any) => data['albums'].items));
-  // }
-
-  // getArtista( termino: string ) {
-  //   return this.getQuery(`search?q=${ termino }&type=artist&limit=10`).pipe( map( data => data['artists'].items));
-  // }
-
 }

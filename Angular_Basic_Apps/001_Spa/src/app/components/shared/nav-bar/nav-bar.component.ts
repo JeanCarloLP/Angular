@@ -29,6 +29,8 @@ export class NavBarComponent implements OnInit {
         break;
       }
     }
+
+    // --------------------------------------------------------------------------------------------------------------------
     // Otra forma más elegante sería la siguiente
     // let indexArray = -1;
     // const myFunction = this.aHeroes.find((value, index) => {
@@ -36,6 +38,8 @@ export class NavBarComponent implements OnInit {
     //     indexArray = index;
     //   }
     // });
+    // --------------------------------------------------------------------------------------------------------------------
+
     if (indexArray !== -1) {
       this.router.navigate( ['/heroe', indexArray] );
     }
@@ -45,13 +49,13 @@ export class NavBarComponent implements OnInit {
   // La SEGUNDA OPCION sería crear UN NUEVO TEMPLATE al que navegaremos en caso de  realizar busquedas.
   // en este nuevo template implementamos lógica que llame al servicio de heroes
   // --------------------------------------------------------------------------------------------------------------------
+
   buscarHeroe2( termino: string ) {
     this.router.navigate( ['/buscar', termino] );
   }
+
   // --------------------------------------------------------------------------------------------------------------------
   // La TRCERA OPCION sería crear nuestro propio pipe y filtrar los resultados de las cards en el mismo template.
   // --------------------------------------------------------------------------------------------------------------------
-
-
 
 }

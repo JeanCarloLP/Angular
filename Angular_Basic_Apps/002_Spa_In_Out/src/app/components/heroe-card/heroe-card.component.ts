@@ -11,7 +11,7 @@ export class HeroeCardComponent implements OnInit {
   @Input() heroe: any = {};
   @Input() index: number;
 
-  @Output() heroeSeleccionado: EventEmitter<number>; // queremos pasar el index
+  @Output() heroeSeleccionado: EventEmitter<number>;
 
   constructor( private router: Router ) {
     this.heroeSeleccionado = new EventEmitter();
@@ -21,7 +21,6 @@ export class HeroeCardComponent implements OnInit {
   }
 
   verHeroe() {
-    // this.heroeSeleccionado.emit( this.index );
     this.router.navigate( ['/heroe', this.index] );
   }
 }

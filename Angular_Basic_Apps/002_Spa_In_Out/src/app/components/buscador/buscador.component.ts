@@ -15,7 +15,6 @@ export class BuscadorComponent implements OnInit {
                private heroesService: HeroesService) { }
 
   ngOnInit() {
-    // estamos enviando el parametro por URL
     this.activatedRoute.params.subscribe( params => {
       this.termino = params.termino;
       this.heroes = this.heroesService.buscarHeroes( params.termino);

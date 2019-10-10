@@ -9,17 +9,6 @@ import { SpotifyService } from 'src/app/services/spotify.service';
 })
 export class HomeComponent {
 
-  // // Ejemplode petición, en nuestro ejercicio haremos uso de un servicio
-  // paises: any[] = [];
-
-  // constructor( private http: HttpClient) {
-  //   console.log('Constructor del Home, recibe el objeto de la petición a rest countries');
-  //   this.http.get('https://restcountries.eu/rest/v2/lang/es').subscribe( (resp: any) => {
-  //     this.paises = resp;
-  //     console.log( resp );
-  //   });
-  //  }
-
   // Variables
   nuevasCanciones: any[] = [];
   loading: boolean;
@@ -37,7 +26,6 @@ export class HomeComponent {
       }, ( errorServicio ) => {
         this.loading = false;
         this.error = true;
-        // console.log(errorServicio);
         this.mensajeError = errorServicio.error.error.message;
       });
   }
