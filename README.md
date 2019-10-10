@@ -50,7 +50,7 @@ Recordatorio para el uso de directivas.
 
 First contact with IONIC. Just make a simple checklist trying to know the basics about IONIC framework
 
-Recordatorio para el uso de directivas.
+Primer contacto con IONIC. Creación de una lista para saber controlar lo básico del framework IONIC.
 
 ## 007_Login
 
