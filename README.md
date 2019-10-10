@@ -46,6 +46,12 @@ Reminder how to use of directives.
 
 Recordatorio para el uso de directivas.
 
+## 006_CheckList_IONIC
+
+First contact with IONIC. Just make a simple checklist trying to know the basics about IONIC framework
+
+Recordatorio para el uso de directivas.
+
 ## 007_Login
 
 Login Application using 3rd party libraries to improve messages through modal windows.
