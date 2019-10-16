@@ -58,6 +58,12 @@ Login Application using 3rd party libraries to improve messages through modal wi
 
 Aplicación para realizar un login con el uso de librerias para mejorar los mensajes mediante ventanas modales.
 
+## 008_Auth0_Login
+
+Login Application using Auth 0 a very stong app to secure ouracces with social media logins as google, facebook, twitter o by mail.
+
+Aplicación para realizar un login con el uso de Auth 0 una herramienta muy potente que nos ayudará a proteger al acceso a nuestras apps mediante el acceso de google, facebook twitter o por mail.
+
 ### Prerequisites
 
 Remember to download the project and run "npm install" and "ng serve" or "ng start" depending on your configuration.
