@@ -19,6 +19,7 @@ Añado algunas pequeñas nociones de Typescript, intentando hacer uso de las bue
 ## 001_Spa (Single Page Application)
 ![spa routing](https://img.shields.io/badge/spa-router-brightgreen.svg)
 ![spa service](https://img.shields.io/badge/spa-service-blue.svg)
+
 This is the case of a minimal application (for desktop and mobile devices).
 
 Este es el caso de una aplicación mínima (tanto de escritorio como movil).
