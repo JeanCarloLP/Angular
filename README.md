@@ -26,7 +26,7 @@ This is the case of a minimal application (for desktop and mobile devices).
 Este es el caso de una aplicación mínima (tanto de escritorio como movil).
 
 ## 002_Spa (Single Page Application)
-![spa @Input](https://img.shields.io/badge/spa-input-brightgreen.svg)
+![spa @Input](https://img.shields.io/badge/spa-@Input-brightgreen.svg)
 ![spa @Output](https://img.shields.io/badge/spa-output-blue.svg)
 
 Similar to the previous app but in this case, we implement the use of @Input and @Output.
@@ -34,17 +34,17 @@ Similar to the previous app but in this case, we implement the use of @Input and
 Similar a la app anterior pero en este caso se implementa el uso de @Input y @Output.
 
 ## 003_Pipes
-![spa upperCase](https://img.shields.io/badge/spa-uppercase-brightgreen.svg)
-![spa lowerCase](https://img.shields.io/badge/spa-lowercase-blue.svg)
-![spa slice](https://img.shields.io/badge/spa-slice-brightgreen.svg)
-![spa decimal](https://img.shields.io/badge/spa-decimal-blue.svg)
-![spa percent](https://img.shields.io/badge/spa-percent-brightgreen.svg)
-![spa currency](https://img.shields.io/badge/spa-currency-blue.svg)
-![spa json](https://img.shields.io/badge/spa-async-brightgreen.svg)
-![spa async](https://img.shields.io/badge/spa-decimal-blue.svg)
-![spa date](https://img.shields.io/badge/spa-date-brightgreen.svg)
-![spa custom](https://img.shields.io/badge/spa-custom-blue.svg)
-![spa capitalize](https://img.shields.io/badge/spa-capitalize-brightgreen.svg)
+![pipes upperCase](https://img.shields.io/badge/pipes-uppercase-brightgreen.svg)
+![pipes lowerCase](https://img.shields.io/badge/pipes-lowercase-blue.svg)
+![pipes slice](https://img.shields.io/badge/pipes-slice-brightgreen.svg)
+![pipes decimal](https://img.shields.io/badge/pipes-decimal-blue.svg)
+![pipes percent](https://img.shields.io/badge/pipes-percent-brightgreen.svg)
+![pipes currency](https://img.shields.io/badge/pipes-currency-blue.svg)
+![pipes json](https://img.shields.io/badge/pipes-async-brightgreen.svg)
+![pipes async](https://img.shields.io/badge/pipes-decimal-blue.svg)
+![pipes date](https://img.shields.io/badge/pipes-date-brightgreen.svg)
+![pipes custom](https://img.shields.io/badge/pipes-custom-blue.svg)
+![pipes capitalize](https://img.shields.io/badge/pipes-capitalize-brightgreen.svg)
 
 Shortcuts and reminders for the use of pipes.
 
