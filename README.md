@@ -1,10 +1,10 @@
 # Angular Basic Apps
 
-In this repository you can find some small apps to help if you have recently started in the world of Angular and Typescript.
+In this repository you can find some small apps that helps me on my first steps with Angular and Typescript.
 
-It is divided by folders and you can locate what you need from this README.
+It is divided by folders and you can find what you need from this README.
 
-En este repositorio podrás encontrar algunas pequeñas apps que te sirvan de ayuda, si has empezado hace poco en el mundo de Angular y Typescript.
+En este repositorio podrás encontrar algunas pequeñas apps que me ayudaron cuando empecé en el mundo de Angular y Typescript.
 
 Está dividido por carpetas, de forma que podáis localizar lo que necesiteis desde este README.
 
@@ -12,9 +12,9 @@ Está dividido por carpetas, de forma que podáis localizar lo que necesiteis de
 
 ## 000_Typescript
 
-I add some small notions of Typescript, trying to make use of good practices and examples to try to have a cleaner code.
+Some small notions of Typescript, trying to make use of good practices and examples to try to have a cleaner code.
 
-Añado algunas pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
+Pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
 
 ## 001_Spa (Single Page Application)
 ![spa routing](https://img.shields.io/badge/spa-routing-brightgreen.svg)
@@ -55,7 +55,7 @@ Atajos y recordatorios del uso de pipes.
 ![spoty petitions](https://img.shields.io/badge/pipes-petition-blue.svg)
 ![postman GET](https://img.shields.io/badge/postman-GET-brightgreen.svg)
 ![postman POST](https://img.shields.io/badge/postman-POST-blue.svg)
-![spoty mapOperator](https://img.shields.io/badge/spoty-mapOperator-blue.svg)
+![spoty mapOperator](https://img.shields.io/badge/spoty-mapOperator-brightgreen.svg)
 
 Application that uses the tool for developers of Spotify and Postman to explain the use of tokens, routes, HTTP requests and subscriptions among others.
 
@@ -92,6 +92,8 @@ Primer contacto con IONIC. Creación de una lista para saber controlar lo básic
 ![form ngForm](https://img.shields.io/badge/form-ngForm-brightgreen.svg)
 ![form ngSubmit](https://img.shields.io/badge/form-ngSubmit-blue.svg)
 ![form ngModel](https://img.shields.io/badge/form-ngModel-brightgreen.svg)
+![ES6 spread](https://img.shields.io/badge/es6-spread-blue.svg)
+![angular guard](https://img.shields.io/badge/angular-guard-brightgreen.svg)
 
 Login Application using 3rd party libraries to improve messages through modal windows.
 
