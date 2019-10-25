@@ -1,50 +1,84 @@
-<h4>Formularios <small>template</small></h4>
+<h4>Forms <small>data aproximation (logic on the controller)</small></h4>
 <hr>
-<form>
+<form [formGroup]="form" (ngSubmit)="saveForm()" >
 
-  <div>
+  <div formGroupName="fullName">
 
     <div class="form-group row">
-      <label class="col-2 col-form-label">Nombre</label>
+      <label class="col-2 col-form-label">Name</label>
       <div class="col-8">
+        <input [ngClass]="[ !form.get('fullName.name').touched ? 'form-control':(
+                            !form.get('fullName.name').valid ? 'form-control is-invalid' : 'form-control is-valid' )]"
+                type="text"
+                placeholder="Name"
+                formControlName="name">
 
-        <input class="form-control"
-               type="text"
-               placeholder="Nombre">
+        <div *ngIf="form.controls['fullName'].controls['name'].errors?.required" class="invalid-feedback">
+          This field is required
+        </div>
+        <div *ngIf="form.controls['fullName'].controls['name'].errors?.minlength" class="invalid-feedback">
+          This field must have at least 2 digits.
+        </div>
       </div>
     </div>
 
     <div class="form-group row">
-      <label class="col-2 col-form-label">Apellido</label>
+      <label class="col-2 col-form-label">Surname</label>
       <div class="col-8">
 
-        <input class="form-control"
+        <input [ngClass]="[ !form.get('fullName.surname').touched ? 'form-control':(
+                            !form.get('fullName.surname').valid ? 'form-control is-invalid' : 'form-control is-valid' )]"
                type="text"
-               placeholder="Apellido">
+               placeholder="Surname"
+               formControlName="surname">
+        
+        <div *ngIf="form.controls['fullName'].controls['surname'].errors?.required" class="invalid-feedback">
+          This field is required
+        </div>
+        <div *ngIf="form.controls['fullName'].controls['surname'].errors?.minlength" class="invalid-feedback">
+          This field must have at least 2 digits.
+        </div>
       </div>
     </div>
 
   </div>
 
   <div class="form-group row">
-    <label class="col-2 col-form-label">Correo</label>
+    <label class="col-2 col-form-label">E-mail</label>
     <div class="col-md-8">
 
-      <input class="form-control"
+      <input [ngClass]="[ !form.get('email').touched ? 'form-control':(
+                          !form.get('email').valid ? 'form-control is-invalid' : 'form-control is-valid' )]"
              type="email"
-             placeholder="Correo electrónico">
+             placeholder="E-mail"
+             formControlName="email" >
+
+      <div *ngIf="form.controls['email'].errors?.required" class="invalid-feedback">
+        This field is required
+      </div>
+      <div *ngIf="form.controls['email'].errors?.pattern" class="invalid-feedback">
+        This field doesn´t have the pattern required.
+      </div>
     </div>
   </div>
 
-
-
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Hobbies</label>
+    <div class="col-md-8" formArrayName="hobbies" *ngFor = "let hobby of form.controls['hobbies']?.value; let i = index">
+        <ng-container [formGroupName]="i">
+          <input formControlName="hobby" placeholder="hobby" type="text" class="form-control mb-2">
+        </ng-container>
+    </div>  
+  </div>  
+  
   <div class="form-group row">
     <label class="col-2 col-form-label">&nbsp;</label>
     <div class="input-group col-md-8">
+      <button (click)="addHobby()" type="button" class="btn btn-primary mr-2">+</button>
       <button type="submit" class="btn btn-outline-primary">
-        Guardar
+        Save
       </button>
     </div>
   </div>
-
+  {{ form.valid }}
 </form>
