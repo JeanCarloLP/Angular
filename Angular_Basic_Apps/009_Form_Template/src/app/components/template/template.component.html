@@ -1,0 +1,111 @@
+<h4>Forms: <small>template aproximation</small></h4>
+<hr>
+<form (ngSubmit)="save(formTemplate)" novalidate="" #formTemplate="ngForm">
+
+    <div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Name</label>
+            <div class="col-8">
+                <input class="form-control" minlength="2" name="name" [(ngModel)]="user.name" placeholder="name"
+                    required type="text" #name="ngModel">
+                <div *ngIf="name?.touched">
+                    <div *ngIf="name.errors?.required">This field is required</div>
+                    <div *ngIf="name.errors?.minlength">Minimun length must be
+                        {{ name.errors['minlength'].requiredLength }} digits</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Surname</label>
+            <div class="col-8">
+                <input class="form-control" minlength="2" name="surname" [(ngModel)]="user.surname"
+                    placeholder="surname" required type="text" #surname="ngModel">
+                <div *ngIf="surname?.touched">
+                    <div *ngIf="surname.errors?.required">This field is required</div>
+                    <div *ngIf="surname.errors?.minlength">Minimun length must be
+                        {{surname.errors['minlength'].requiredLength}} digits</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group row">
+
+        <label class="col-2 col-form-label">E-mail</label>
+        <div class="col-md-8">
+
+            <input class="form-control" name="email" [(ngModel)]="user.email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="e-mail" required type="email"
+                #email="ngModel">
+            <div *ngIf="email?.touched">
+                <div *ngIf="email.errors?.required">This field is required</div>
+                <div *ngIf="email.errors?.pattern">The e-mail doesn´t have the required format</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group row">
+
+        <label class="col-2 col-form-label">Country</label>
+        <div class="col-md-8">
+            <select [(ngModel)]="user.country" class="form-control" name="country">
+                <option value="">Choose one option</option>
+                <option *ngFor="let country of countries" [value]="country.code">{{ country.name }}</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="form-group row">
+
+        <label class="col-2 col-form-label">Gender</label>
+        <div class="col-md-8 mt-2">
+
+            <div *ngFor="let gender of genders" class="form-check form-check-inline">
+                <input  [(ngModel)]="user.gender"
+                        class="form-check-input" 
+                        type="radio" 
+                        name="inlineRadioOptions" 
+                        id="inlineRadio1" 
+                        [value]="gender">
+                <label class="form-check-label" for="inlineRadio1">{{ gender }}</label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group row">
+
+        <label class="col-2 col-form-label">Accept</label>
+        <div class="col-md-8 mt-2">
+            <div class="form-check">
+                <input  [(ngModel)]="user.accept" 
+                        class="form-check-input" 
+                        type="checkbox" 
+                        name="checkbox" 
+                        [value]="user.accept" 
+                        id="defaultCheck1"
+                        required>
+                <label class="form-check-label" for="defaultCheck1">
+                    Accept the conditions to proceed.
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group row">
+
+        <label class="col-2 col-form-label">&nbsp;</label>
+        <div class="input-group col-md-8">
+            <button [disabled]="!formTemplate.valid" type="submit" class="btn btn-outline-primary">
+                Save
+            </button>
+        </div>
+    </div>
+
+</form>
