@@ -63,14 +63,52 @@
   </div>
 
   <div class="form-group row">
+    <label class="col-2 col-form-label">User Name</label>
+    <div class="col-md-8">
+      <input formControlName="userName" type="text" class="form-control" placeholder="user name">
+    </div>  
+  </div> 
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Password</label>
+    <div class="col-md-8">
+      <input formControlName="password" type="password" class="form-control" placeholder="password">
+    </div>  
+  </div> 
+  
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Check Password</label>
+    <div class="col-md-8">
+      <input formControlName="passwordCheck" type="password" class="form-control" placeholder="repeat your password">
+    </div>  
+  </div> 
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Hobbies</label>
+    <div class="col-md-8" formArrayName="hobbies">
+      <input  *ngFor = "let hobby of form.controls['hobbies'].controls; let i = index"
+              [formControlName]=i type="text" class="form-control mb-2" placeholder="hobby">
+    </div>  
+  </div> 
+
+  <!-- In case we need to load data from the Array -->
+  <!-- 
+  <div class="form-group row">
     <label class="col-2 col-form-label">Hobbies</label>
     <div class="col-md-8" formArrayName="hobbies" *ngFor = "let hobby of form.controls['hobbies']?.value; let i = index">
         <ng-container [formGroupName]="i">
-          <input formControlName="hobby" placeholder="hobby" type="text" class="form-control mb-2">
+          <input [ngClass]="[ !form.controls['hobbies'].touched ? 'form-control': (
+                              !form.controls['hobbies'].valid ? 'form-control is-invalid' : 'form-control is-valid' )]"
+                  formControlName="hobby" placeholder="hobby" type="text" >
+          <div *ngIf="form.controls['hobbies'].errors?.required" class="invalid-feedback">
+              This field is required
+            </div>
         </ng-container>
     </div>  
   </div>  
-  
+  -->  
+
+
   <div class="form-group row">
     <label class="col-2 col-form-label">&nbsp;</label>
     <div class="input-group col-md-8">
@@ -80,5 +118,9 @@
       </button>
     </div>
   </div>
-  {{ form.valid }}
+
+  <!-- {{ form.valid }}
+  <br>
+  {{ form.status }} -->
+
 </form>
