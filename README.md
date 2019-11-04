@@ -17,9 +17,9 @@ Some small notions of Typescript, trying to make use of good practices and examp
 Pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
 
 ## 001_Spa (Single Page Application)
-![spa routing](https://img.shields.io/badge/spa-routing-brightgreen.svg)
-![spa service](https://img.shields.io/badge/spa-service-blue.svg)
-![spa pipes](https://img.shields.io/badge/spa-pipes-brightgreen.svg)
+![spa routing]
+![spa service]
+![spa pipes]
 
 This is the case of a minimal application (for desktop and mobile devices).
 
