@@ -81,6 +81,18 @@ Login Application using Auth 0 a very stong app to secure ouracces with social m
 
 Aplicación para realizar un login con el uso de Auth 0 una herramienta muy potente que nos ayudará a proteger al acceso a nuestras apps mediante el acceso de google, facebook twitter o por mail.
 
+## 009_Form_Template
+
+Basic tips in forms with aproximation by template.
+
+Consejos iniciales para el desarrollo de formularios por template.
+
+## 010_Form_Data
+
+Basic tips in forms with aproximation by data (is mandatory to have some template logic too, e.g. [ngClass]).
+
+Consejos iniciales para el desarrollo de formularios por data (en algunos casos es obligatorio el uso de logica en el template, con las clases por ejemplo [ngClass] ).
+
 
 ## License
 
