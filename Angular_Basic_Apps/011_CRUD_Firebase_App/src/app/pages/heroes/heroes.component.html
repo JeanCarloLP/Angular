@@ -1,1 +1,50 @@
-<p>heroes works!</p>
+<h1>Heroes</h1>
+<hr>
+
+<div class="row">
+    <div class="col text-right">
+        <button routerLink="/hero/new" class="btn btn-primary">
+            <i class="fa fa-plus"></i>
+            Add
+        </button>
+    </div>
+</div>
+<div>
+    <table class="table mt-5 animated fadeIn slow">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Power</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        </tbody>
+    </table>  
+</div>
+
+<div class="alert alert-info text-center mt-3">
+    <h4 class="alert-heading">Loading</h4>
+    <p>
+        <i class="fa fa-sync-alt fa-spin fa-2x"></i>
+    </p>
+    <p clas="mb-0">
+        Please stand by ...
+    </p>
+</div>
+
+<div class="alert alert-warning text-center mt-3">
+    <h4 class="alert-heading">No match found!</h4>
+    <p>
+        <i class="fa fa-exclamation"></i>
+    </p>
+</div>
