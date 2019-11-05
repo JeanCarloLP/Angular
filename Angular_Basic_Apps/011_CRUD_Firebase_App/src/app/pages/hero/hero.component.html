@@ -1,0 +1,61 @@
+<h1>Hero
+    <small>name:</small>
+</h1>
+<hr>
+
+<div class="row text-right">
+    <div class="col">
+        <button class="btn btn-danger" routerLink="/heroes">
+            <i class="fa fa-arrow-left"></i>
+            Return
+        </button>
+    </div>
+</div>
+
+<div class="row animated fadeIn slow">
+    <div class="col">
+        <form (ngSubmit)="save(myForm)" #myForm="ngForm">
+            <div class="form-group">
+                <label> Firebase ID</label>
+                <input type="text" class="form-control" disabled="disabled" placeholder="Firebase ID"
+                    [(ngModel)]="hero.id" name="id">
+                <small class="form-text text-muted">This fill is generated automatically</small>
+            </div>
+
+            <div class="form-group">
+                <label> Name: </label>
+                <input type="text" class="form-control" placeholder="hero name" required
+                [(ngModel)]="hero.name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label> Power: </label>
+                <input type="text" class="form-control" placeholder="hero power" required
+                [(ngModel)]="hero.power" name="power">
+            </div>
+
+            <div class="form-group">
+                <label> Status: </label>
+                <br>
+                <button *ngIf="hero.status"
+                        (click)="hero.status = false" class="btn btn-outline-success w-50" type="button">
+                    <i class="fa fa-smile-wink"></i>
+                    alive
+                </button>
+                <button *ngIf="!hero.status" (click)="hero.status = true" class="btn btn-outline-danger w-50" type="button">
+                    <i class="fa fa-dizzy"></i>
+                    dead
+                </button>
+            </div>
+
+            <hr>
+
+            <div class="form-group text-center">
+                <button class="btn btn-primary w-25" type="submit">
+                    <i class="fa fa-save"></i>
+                    Save
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
