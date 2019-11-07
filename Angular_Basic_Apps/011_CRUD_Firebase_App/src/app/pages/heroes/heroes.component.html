@@ -9,25 +9,36 @@
         </button>
     </div>
 </div>
+
 <div>
     <table class="table mt-5 animated fadeIn slow">
         <thead class="thead-dark">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Power</th>
-            <th scope="col">Status</th>
-            <th scope="col">Actions</th>
-        </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Power</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
+            <tr *ngFor="let hero of heroes; let i = index">
+                <th scope="row">{{i +1}}</th>
+                <td>{{hero.name}}</td>
+                <td>{{hero.power}}</td>
+                <td>
+                    <label *ngIf="hero.status" class="badge badge-success">Alive</label>
+                    <label *ngIf="!hero.status" class="badge badge-danger">Alive</label>
+                </td>
+                <td>
+                    <button class="btn btn-info mr-1" [routerLink]="['/hero', hero.id]">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                    <button class="btn btn-danger" (click)="deleteHero( hero, i )">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
         </tbody>
     </table>  
 </div>
