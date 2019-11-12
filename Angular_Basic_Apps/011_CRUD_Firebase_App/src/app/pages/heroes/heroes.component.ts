@@ -13,11 +13,15 @@ export class HeroesComponent implements OnInit {
 
   heroes: HeroModel[] = [];
 
+  loading = false;
+
   constructor( private sHeroes: SHeroesService ) { }
 
   ngOnInit() {
+    this.loading = true;
     this.sHeroes.getHeroes().subscribe( resp =>  {
       this.heroes = resp;
+      this.loading = false;
     });
   }
 
