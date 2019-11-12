@@ -93,6 +93,12 @@ Basic tips in forms with aproximation by data (is mandatory to have some templat
 
 Consejos iniciales para el desarrollo de formularios por data (en algunos casos es obligatorio el uso de logica en el template, con las clases por ejemplo [ngClass] ).
 
+## 011_CRUD_Firebase
+
+Simple app to perform the first steps with CRUD. If you want to develop a more detailed app (Fullstack) and develop both the backend and the frontend, with different types of requests see the repository of Phonebook_MEAN where I use angular, mongo and node.js (https://github.com/JeanCarloLP/Phonebook_MEAN)
+
+Simple aplicación para la realización de los primeros pasos con CRUD. En caso de querer desarrollar una app mas detallada (Fullstack) y desarrollar tanto el backend como el frontend junto con diferente tipo de peticiones ver el repositorio de Phonebook_MEAN donde hago uso de angular, mongo y node.js (https://github.com/JeanCarloLP/Phonebook_MEAN)
+
 
 ## License
 
