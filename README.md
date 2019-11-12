@@ -1,10 +1,10 @@
 # Angular Basic Apps
 
-In this repository you can find some small apps to help if you have recently started in the world of Angular and Typescript.
+In this repository you can find some small apps that helps me on my first steps with Angular and Typescript.
 
-It is divided by folders and you can locate what you need from this README.
+It is divided by folders and you can find what you need from this README.
 
-En este repositorio podrás encontrar algunas pequeñas apps que te sirvan de ayuda, si has empezado hace poco en el mundo de Angular y Typescript.
+En este repositorio podrás encontrar algunas pequeñas apps que me ayudaron cuando empecé en el mundo de Angular y Typescript.
 
 Está dividido por carpetas, de forma que podáis localizar lo que necesiteis desde este README.
 
@@ -29,9 +29,9 @@ The following info is to set the minimun installations to deploy properly the ap
 
 ## 000_Typescript
 
-I add some small notions of Typescript, trying to make use of good practices and examples to try to have a cleaner code.
+Some small notions of Typescript, trying to make use of good practices and examples to try to have a cleaner code.
 
-Añado algunas pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
+Pequeñas nociones de Typescript, intentando hacer uso de las buenas prácticas y ejemplos para tratar de tener un código más limpio.
 
 ## 001_Spa (Single Page Application)
 
@@ -80,6 +80,24 @@ Aplicación para realizar un login con el uso de librerias para mejorar los mens
 Login Application using Auth 0 a very stong app to secure ouracces with social media logins as google, facebook, twitter o by mail.
 
 Aplicación para realizar un login con el uso de Auth 0 una herramienta muy potente que nos ayudará a proteger al acceso a nuestras apps mediante el acceso de google, facebook twitter o por mail.
+
+## 009_Form_Template
+
+Basic tips in forms with aproximation by template.
+
+Consejos iniciales para el desarrollo de formularios por template.
+
+## 010_Form_Data
+
+Basic tips in forms with aproximation by data (is mandatory to have some template logic too, e.g. [ngClass]).
+
+Consejos iniciales para el desarrollo de formularios por data (en algunos casos es obligatorio el uso de logica en el template, con las clases por ejemplo [ngClass] ).
+
+## 011_CRUD_Firebase
+
+Simple app to perform the first steps with CRUD. If you want to develop a more detailed app (Fullstack) and develop both the backend and the frontend, with different types of requests see the repository of Phonebook_MEAN where I use angular, mongo and node.js (https://github.com/JeanCarloLP/Phonebook_MEAN)
+
+Simple aplicación para la realización de los primeros pasos con CRUD. En caso de querer desarrollar una app mas detallada (Fullstack) y desarrollar tanto el backend como el frontend junto con diferente tipo de peticiones ver el repositorio de Phonebook_MEAN donde hago uso de angular, mongo y node.js (https://github.com/JeanCarloLP/Phonebook_MEAN)
 
 
 ## License
