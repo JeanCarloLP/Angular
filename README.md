@@ -99,6 +99,11 @@ Simple app to perform the first steps with CRUD. If you want to develop a more d
 
 Simple aplicación para la realización de los primeros pasos con CRUD. En caso de querer desarrollar una app mas detallada (Fullstack) y desarrollar tanto el backend como el frontend junto con diferente tipo de peticiones ver el repositorio de Phonebook_MEAN donde hago uso de angular, mongo y node.js (https://github.com/JeanCarloLP/Phonebook_MEAN)
 
+## 012_FireChat
+Chat app using firebase and online registration as google or twitter or any other third party applications that allow us to interact in a simple message chat.
+
+Aplicación de un chat haciendo uso de firebase y el registro online de google o twitter o terceras aplicaciones q nos permitan interactuar en un simple chat de mensajes.
+
 
 ## License
 
