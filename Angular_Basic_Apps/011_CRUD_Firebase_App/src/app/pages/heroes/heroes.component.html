@@ -11,7 +11,7 @@
 </div>
 
 <div>
-    <table class="table mt-5 animated fadeIn slow">
+    <table *ngIf="!loading && heroes.length > 0 " class="table mt-5 animated fadeIn slow">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">#</th>
@@ -43,7 +43,7 @@
     </table>  
 </div>
 
-<div class="alert alert-info text-center mt-3">
+<div *ngIf="loading" class="alert alert-info text-center mt-3 animated fadeIn fast">
     <h4 class="alert-heading">Loading</h4>
     <p>
         <i class="fa fa-sync-alt fa-spin fa-2x"></i>
@@ -53,7 +53,7 @@
     </p>
 </div>
 
-<div class="alert alert-warning text-center mt-3">
+<div *ngIf="!loading && heroes.length === 0" class="alert alert-warning text-center mt-3">
     <h4 class="alert-heading">No match found!</h4>
     <p>
         <i class="fa fa-exclamation"></i>
