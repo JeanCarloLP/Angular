@@ -28,8 +28,18 @@ export class ChatService {
   }
 
   login( account: string ) {
-    this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
+    switch (account) {
+      case 'google':
+        this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
+        break;
+      case 'twitter':
+        this.afAuth.auth.signInWithPopup(new auth.TwitterAuthProvider());
+        break;
+      default:
+        break;
+    }
   }
+
   logout() {
     this.user = {};
     this.afAuth.auth.signOut();
@@ -55,9 +65,10 @@ export class ChatService {
 
   addMessage( text: string ) {
     const message: Message = {
-      name: 'Demo',
+      name: this.user.name,
       message: text,
-      date: new Date().getTime()
+      date: new Date().getTime(),
+      uid: this.user.uid
     };
 
     return this.itemsCollection.add( message );
