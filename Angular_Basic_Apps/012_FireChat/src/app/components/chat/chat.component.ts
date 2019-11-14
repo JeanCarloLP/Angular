@@ -11,6 +11,7 @@ export class ChatComponent implements OnInit {
   // tslint:disable-next-line:no-inferrable-types
   message: string = '';
   element: any;
+  actualDate: string = new Date().toLocaleDateString('en-GB');
 
   constructor( public chatService: ChatService ) {
     this.chatService.loadMessages().subscribe( () => {
