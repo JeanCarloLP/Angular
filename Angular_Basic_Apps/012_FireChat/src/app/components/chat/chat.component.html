@@ -1,8 +1,13 @@
-<h1>Chat</h1>
+<h6 class="mt-2">{{ actualDate }}</h6>
 <hr>
 <div class="app-messages" id="app-messages">
-    <div class="text-right" *ngFor="let chat of chatService.chats">
-        <span class="badge badge-primary">{{ chat.name }}</span>
+    <div *ngFor="let chat of chatService.chats"
+        [ngClass]="{ 'text-right': chatService.user.uid == chat.uid,
+                     'text-left': chatService.user.uid != chat.uid}">
+        <span class="badge"
+            [ngClass]="{ 'badge-primary': chatService.user.uid == chat.uid,
+                         'badge-success': chatService.user.uid != chat.uid }"
+        >{{ chat.name }}</span>
         <p>{{ chat.message }}</p>
     </div>
 </div>
