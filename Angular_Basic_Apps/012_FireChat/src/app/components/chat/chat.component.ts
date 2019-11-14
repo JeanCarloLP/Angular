@@ -10,18 +10,29 @@ export class ChatComponent implements OnInit {
 
   // tslint:disable-next-line:no-inferrable-types
   message: string = '';
+  element: any;
 
   constructor( public chatService: ChatService ) {
-    this.chatService.loadMessages().subscribe( (messages: any[]) => {
-      console.log( messages );
+    this.chatService.loadMessages().subscribe( () => {
+      setTimeout( () => {
+        this.element.scrollTop = this.element.scrollHeight;
+      }, 50);
     });
   }
 
   ngOnInit() {
+    this.element = document.getElementById('app-messages');
   }
 
   sendMessage() {
-    console.log( this.message );
+    // console.log( this.message );
+    if ( this.message.length === 0) {
+      return;
+    }
+
+    this.chatService.addMessage( this.message )
+      .then( () => this.message = '')
+      .catch( (err) => console.error('Erros trying to send', err));
   }
 
 }
