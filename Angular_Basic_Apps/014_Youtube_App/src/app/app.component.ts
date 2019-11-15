@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { YoutubeService } from './services/youtube.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'youtubeApp';
+  constructor(public youtubeService: YoutubeService ) { }
 }
