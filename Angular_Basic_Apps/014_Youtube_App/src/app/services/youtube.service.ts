@@ -10,10 +10,10 @@ export class YoutubeService {
 
   // you need to registrate on youtube development area
   youtubeUrl: string = 'https://www.googleapis.com/youtube/v3'; // use the url you want
-  apikey: string = 'AIzaSyCj8TVKVS83Uua_Y4ZybTFpqwEnuekpLI8'; // use your apikey
+  apikey: string = null; // 'AIzaSyCj8TVKVS83Uua_Y4ZybTFpqwEnuekpLI8';
   params = new HttpParams().set('part', 'snippet')
                            .set('maxResults', '10')
-                           .set('playlistId', 'UUvosUrZ7hXpzAyobhfztg4w')
+                           .set('playlistId', null ) // 'UUvosUrZ7hXpzAyobhfztg4w'
                            .set('key', this.apikey );
 
   nextPageToken: string = '';
