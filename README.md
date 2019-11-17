@@ -32,7 +32,7 @@ The following info is to set the minimun installations to deploy properly the ap
     * [004_SpotyApp](#004_SpotyApp)
     * [003_Pipes](#003_Pipes)
     * [002_Spa (@Input - @Output)](#002_Spa)
-    * [001_Spa](#001_Spa)
+    * [001_Spa (Single Page Application)](#001_Spa)
     * [000_Typescript](#000_Typescript)
 * [License](#license)
 
@@ -99,13 +99,13 @@ Shortcuts and reminders for the use of pipes.
 
 Atajos y recordatorios del uso de pipes.
 
-## 002_Spa (Single Page Application)
+## 002_Spa
 
 Similar to the previous app but in this case, we implement the use of @Input and @Output.
 
 Similar a la app anterior pero en este caso se implementa el uso de @Input y @Output.
 
-## 001_Spa (Single Page Application)
+## 001_Spa
 
 This is the case of a minimal application (for desktop and mobile devices).
 
