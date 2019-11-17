@@ -21,12 +21,20 @@ The following info is to set the minimun installations to deploy properly the ap
 
 * [Prerequisites](#prerequisites)
 * [Projects](#projects)
-* [License](#license)
-
     * [012_FireChat](#012_FireChat)
     * [011_CRUD_Firebase](#011_CRUD_Firebase)
     * [010_Form_Data](#010_Form_Data)
     * [009_Form_Template](#009_Form_Template)
+    * [008_Auth0_Login](#008_Auth0_Login)
+    * [007_Login](#007_Login)
+    * [006_CheckList_IONIC](#006_CheckList_IONIC)
+    * [005_Directives](#005_Directives)
+    * [004_SpotyApp](#004_SpotyApp)
+    * [003_Pipes](#003_Pipes)
+    * [002_Spa (@Input - @Output)](#002_Spa)
+    * [001_Spa](#001_Spa)
+    * [000_Typescript](#000_Typescript)
+* [License](#license)
 
 
 ## Projects
