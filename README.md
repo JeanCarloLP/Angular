@@ -21,6 +21,8 @@ The following info is to set the minimun installations to deploy properly the ap
 
 * [Prerequisites](#prerequisites)
 * [Projects](#projects)
+    * [015_DragAndDrop](#015_DragAndDrop)
+    * [014_Youtube](#014_Youtube)
     * [012_FireChat](#012_FireChat)
     * [011_CRUD_Firebase](#011_CRUD_Firebase)
     * [010_Form_Data](#010_Form_Data)
@@ -39,6 +41,16 @@ The following info is to set the minimun installations to deploy properly the ap
 
 ## Projects
 **BEFORE YOU INSTALL:** any app please read the [prerequisites](#prerequisites)
+
+## 015_DragAndDrop
+Store images in Firebase storage and load them in a simple view.
+
+Aplicación para almacenar imagenes en el storage de Firebase y cargar las imagenes en una simple vista.
+
+## 014_Youtube
+YouTube app to display the videos of a particular channel.
+
+Aplicación de un canal de youtube para desplegar los videos de un canal en particular.
 
 ## 012_FireChat
 Chat app using firebase and online registration as google or twitter or any other third party applications that allow us to interact in a simple message chat.
