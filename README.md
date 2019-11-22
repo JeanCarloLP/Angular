@@ -21,7 +21,7 @@ The following info is to set the minimun installations to deploy properly the ap
 
 * [Prerequisites](#prerequisites)
 * [Projects](#projects)
-    * [015_DragAndDrop](#015_DragAndDrop)
+    * [015_FileUpload](#015_FileUpload)
     * [014_Youtube](#014_Youtube)
     * [012_FireChat](#012_FireChat)
     * [011_CRUD_Firebase](#011_CRUD_Firebase)
@@ -42,7 +42,7 @@ The following info is to set the minimun installations to deploy properly the ap
 ## Projects
 **BEFORE YOU INSTALL:** any app please read the [prerequisites](#prerequisites)
 
-## 015_DragAndDrop
+## 015_FileUpload
 Store images in Firebase storage and load them in a simple view.
 
 Aplicación para almacenar imagenes en el storage de Firebase y cargar las imagenes en una simple vista.
