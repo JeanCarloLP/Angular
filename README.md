@@ -21,6 +21,7 @@ The following info is to set the minimun installations to deploy properly the ap
 
 * [Prerequisites](#prerequisites)
 * [Projects](#projects)
+    * [016_CDK](#016_CDK)
     * [015_FileUpload](#015_FileUpload)
     * [014_Youtube](#014_Youtube)
     * [012_FireChat](#012_FireChat)
@@ -41,6 +42,11 @@ The following info is to set the minimun installations to deploy properly the ap
 
 ## Projects
 **BEFORE YOU INSTALL:** any app please read the [prerequisites](#prerequisites)
+
+## 016_CDK
+Use of the CDK library to implement virtual scroll and drag-drop elements
+
+Uso de la librería CDK para implementar virtual scroll y elementos drag-drop
 
 ## 015_FileUpload
 Store images in Firebase storage and load them in a simple view.
