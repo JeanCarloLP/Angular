@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     
@@ -21,8 +22,11 @@
         </li>        
       </ul>
       <div class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" placeholder="Search" (keyup.enter)="buscarHeroe2(buscarTexto.value)" #buscarTexto>
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="button" (click)=buscarHeroe2(buscarTexto.value)>Search</button>
+        <input class="form-control mr-sm-2" placeholder="Search" 
+        (keyup.enter)="buscarHeroe2(buscarTexto.value)" #buscarTexto>
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="button" 
+        (click)=buscarHeroe2(buscarTexto.value)>Search</button>
       </div>
     </div>
   </nav>
+  

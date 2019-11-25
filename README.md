@@ -49,7 +49,7 @@ Use of the ng2-charts library to implement graphic charts https://valor-software
 
 Uso de la librería ng2-charts https://valor-software.com/ng2-charts/
 
-![Image of charts](images/017_Charts.png)
+![Image of charts](Angular_Basic_Apps/images/017_Charts.png)
 
 ## 016_CDK
 Use of the CDK library to implement virtual scroll and drag-drop elements
