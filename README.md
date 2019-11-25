@@ -21,6 +21,7 @@ The following info is to set the minimun installations to deploy properly the ap
 
 * [Prerequisites](#prerequisites)
 * [Projects](#projects)
+    * [016_Charts](#017_Charts)
     * [016_CDK](#016_CDK)
     * [015_FileUpload](#015_FileUpload)
     * [014_Youtube](#014_Youtube)
@@ -47,6 +48,8 @@ The following info is to set the minimun installations to deploy properly the ap
 Use of the ng2-charts library to implement graphic charts https://valor-software.com/ng2-charts/
 
 Uso de la librería ng2-charts https://valor-software.com/ng2-charts/
+
+![Image of charts](images/017_Charts.png)
 
 ## 016_CDK
 Use of the CDK library to implement virtual scroll and drag-drop elements
