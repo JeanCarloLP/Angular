@@ -65,6 +65,12 @@ Store images in Firebase storage and load them in a simple view.
 
 Aplicación para almacenar imagenes en el storage de Firebase y cargar las imagenes en una simple vista.
 
+![Image of upload files 1](Angular_Basic_Apps/images/015_1_Upload_Files.png)
+
+![Image of upload files 2](Angular_Basic_Apps/images/015_2_Upload_Files.png)
+
+![Image of upload files 3](Angular_Basic_Apps/images/015_3_Upload_Files.png)
+
 ## 014_Youtube
 YouTube app to display the videos of a particular channel.
 
@@ -74,6 +80,8 @@ Aplicación de un canal de youtube para desplegar los videos de un canal en part
 Chat app using firebase and online registration as google or twitter or any other third party applications that allow us to interact in a simple message chat.
 
 Aplicación de un chat haciendo uso de firebase y el registro online de google o twitter o terceras aplicaciones q nos permitan interactuar en un simple chat de mensajes.
+
+![Image of Fire Chat](Angular_Basic_Apps/images/012_Fire_Chat.png)
 
 ## 011_CRUD_Firebase
 
@@ -105,11 +113,15 @@ Login Application using 3rd party libraries to improve messages through modal wi
 
 Aplicación para realizar un login con el uso de librerias para mejorar los mensajes mediante ventanas modales.
 
+![Image of login](Angular_Basic_Apps/images/007_Login.png)
+
 ## 006_CheckList_IONIC
 
 First contact with IONIC. Just make a simple checklist trying to know the basics about IONIC framework
 
 Primer contacto con IONIC. Creación de una lista para saber controlar lo básico del framework IONIC.
+
+![Image of ion list](Angular_Basic_Apps/images/006_Ion_List.png)
 
 ## 005_Directives
 
@@ -117,17 +129,25 @@ Reminder how to use of directives.
 
 Recordatorio para el uso de directivas.
 
+![Image of directives](Angular_Basic_Apps/images/005_Diretives.png)
+
 ## 004_SpotyApp
 
 Application that uses the tool for developers of Spotify and Postman to explain the use of tokens, routes, HTTP requests and subscriptions among others.
 
 Aplicación que usa la herramienta para desarrolladores de Spotify y Postman para explicar el uso de tokens, rutas, peticiones HTTP y suscripciones entre otras.
 
+![Image of spoti 1](Angular_Basic_Apps/images/004_1_Spoti.png)
+
+![Image of spoti 2](Angular_Basic_Apps/images/004_2_Spoti.png)
+
 ## 003_Pipes
 
 Shortcuts and reminders for the use of pipes.
 
 Atajos y recordatorios del uso de pipes.
+
+![Image of pipes](Angular_Basic_Apps/images/003_Pipes.png)
 
 ## 002_Spa
 
@@ -140,6 +160,8 @@ Similar a la app anterior pero en este caso se implementa el uso de @Input y @Ou
 This is the case of a minimal application (for desktop and mobile devices).
 
 Este es el caso de una aplicación mínima (tanto de escritorio como movil).
+
+![Image of Heroes](Angular_Basic_Apps/images/001_Heroes.png)
 
 ## 000_Typescript
 
