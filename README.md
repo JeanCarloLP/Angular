@@ -4,9 +4,13 @@ In this repository you can find some small apps that helps me on my first steps 
 
 It is divided by folders and you can find what you need from this README.
 
+Remember this: there are some apps that need to set the API key to access the data, so you need to log in at the required websites as Spotify, Auth0 or Firebase.
+
 En este repositorio podrás encontrar algunas pequeñas apps que me ayudaron cuando empecé en el mundo de Angular y Typescript.
 
 Está dividido por carpetas, de forma que podáis localizar lo que necesiteis desde este README.
+
+Recuerda: algunas aplicaciones necesitan del registro en las correspondientes webs para poder obtener una API Key como Spotify, Auth0 o Firebase
 
 ### Prerequisites
 The following info is to set the minimun installations to deploy properly the applications. In case you already deal with this kind of situations feel free to go to the following point.
@@ -21,7 +25,7 @@ The following info is to set the minimun installations to deploy properly the ap
 
 * [Prerequisites](#prerequisites)
 * [Projects](#projects)
-    * [016_Charts](#017_Charts)
+    * [017_Charts](#017_Charts)
     * [016_CDK](#016_CDK)
     * [015_FileUpload](#015_FileUpload)
     * [014_Youtube](#014_Youtube)
